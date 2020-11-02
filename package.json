@@ -1,5 +1,5 @@
 {
-  "name": "gulp-sass",
+  "name": "gulp-sass-changba",
   "version": "4.1.0",
   "description": "Gulp plugin for sass",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dlmanning/gulp-sass"
+    "url": "git://github.com/ChangbaFE/gulp-sass"
   },
   "keywords": [
     "gulpplugin",
@@ -21,17 +21,21 @@
   "author": "David Manning",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dlmanning/gulp-sass/issues"
+    "url": "https://github.com/ChangbaFE/gulp-sass/issues"
   },
   "dependencies": {
     "chalk": "^2.3.0",
     "lodash": "^4.17.11",
-    "node-sass": "^4.8.3",
     "plugin-error": "^1.0.1",
     "replace-ext": "^1.0.0",
     "strip-ansi": "^4.0.0",
     "through2": "^2.0.0",
     "vinyl-sourcemaps-apply": "^0.2.0"
+  },
+  "peerDependencies": {
+    "fibers": "^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0",
+    "node-sass": "^4.0.0",
+    "sass": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.1.0",
@@ -39,7 +43,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
     "globule": "^1.0.0",
-    "gulp": "^3.8.11",
+    "gulp": "^4.0.0",
     "gulp-postcss": "^7.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-tap": "^0.1.3",

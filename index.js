@@ -118,7 +118,6 @@ const gulpSass = (options, sync) => through.obj((file, enc, cb) => { // eslint-d
     error.messageOriginal = error.message; // eslint-disable-line no-param-reassign
     error.message = stripAnsi(message); // eslint-disable-line no-param-reassign
     error.relativePath = relativePath; // eslint-disable-line no-param-reassign
-
     return cb(new PluginError(PLUGIN_NAME, error));
   };
 
@@ -133,7 +132,7 @@ const gulpSass = (options, sync) => through.obj((file, enc, cb) => { // eslint-d
       filePush(obj);
     };
 
-    gulpSass.compiler.render(opts, callback);
+    gulpSass.compiler.render({ ...opts, fiber: require('fibers') }, callback);
   } else {
     //////////////////////////////
     // Sync Sass render
@@ -163,6 +162,6 @@ gulpSass.logError = function logError(error) {
 //////////////////////////////
 // Store compiler in a prop
 //////////////////////////////
-gulpSass.compiler = require('node-sass');
+gulpSass.compiler = require('sass');
 
 module.exports = gulpSass;

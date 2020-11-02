@@ -8,5 +8,11 @@ rules:
   max-len:
     - 2
     - 120
+  global-require:
+    - 0
+  spaced-comment:
+    - 0
+  import/no-extraneous-dependencies:
+    - 0
 
 extends: "airbnb-base"

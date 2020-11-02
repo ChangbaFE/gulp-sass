@@ -1,8 +1,8 @@
-# gulp-sass [![Build Status](https://travis-ci.org/dlmanning/gulp-sass.svg?branch=master)](https://travis-ci.org/dlmanning/gulp-sass) [![Join the chat at https://gitter.im/dlmanning/gulp-sass](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dlmanning/gulp-sass?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![npm version](https://badge.fury.io/js/gulp-sass.svg)](http://badge.fury.io/js/gulp-sass)
+# gulp-sass-changba [![Build Status](https://travis-ci.org/ChangbaFE/gulp-sass.svg?branch=master)](https://travis-ci.org/ChangbaFE/gulp-sass) [![Join the chat at https://gitter.im/ChangbaFE/gulp-sass](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ChangbaFE/gulp-sass?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![npm version](https://badge.fury.io/js/gulp-sass-changba.svg)](http://badge.fury.io/js/gulp-sass-changba)
 
 Sass plugin for [Gulp](https://github.com/gulpjs/gulp).
 
-**_Before filing an issue, please make sure you have [Updated to the latest Gulp Sass](https://github.com/dlmanning/gulp-sass/wiki/Update-to-the-latest-Gulp-Sass) and have gone through our [Common Issues and Their Fixes](https://github.com/dlmanning/gulp-sass/wiki/Common-Issues-and-Their-Fixes) section._**
+**_Before filing an issue, please make sure you have [Updated to the latest Gulp Sass](https://github.com/ChangbaFE/gulp-sass/wiki/Update-to-the-latest-Gulp-Sass) and have gone through our [Common Issues and Their Fixes](https://github.com/ChangbaFE/gulp-sass/wiki/Common-Issues-and-Their-Fixes) section._**
 
 # Support
 
@@ -13,7 +13,7 @@ Only [Active LTS and Current releases][1] are supported.
 # Install
 
 ```
-npm install node-sass gulp-sass --save-dev
+npm install node-sass gulp-sass-changba --save-dev
 ```
 
 # Basic Usage
@@ -24,7 +24,7 @@ Something like this will compile your Sass files:
 'use strict';
 
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass-changba');
 
 sass.compiler = require('node-sass');
 
@@ -45,7 +45,7 @@ You can also compile synchronously, doing something like this:
 'use strict';
 
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass-changba');
 
 sass.compiler = require('node-sass');
 
@@ -72,7 +72,7 @@ Note that when using Dart Sass, **synchronous compilation is twice as fast as as
 
 var Fiber = require('fibers');
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass-changba');
 
 sass.compiler = require('sass');
 
@@ -89,7 +89,7 @@ gulp.task('sass:watch', function () {
 
 ## Options
 
-Pass in options just like you would for [Node Sass](https://github.com/sass/node-sass#options); they will be passed along just as if you were using Node Sass. Except for the `data` option which is used by gulp-sass internally. Using the `file` option is also unsupported and results in undefined behaviour that may change without notice.
+Pass in options just like you would for [Node Sass](https://github.com/sass/node-sass#options); they will be passed along just as if you were using Node Sass. Except for the `data` option which is used by gulp-sass-changba internally. Using the `file` option is also unsupported and results in undefined behaviour that may change without notice.
 
 For example:
 
@@ -113,7 +113,7 @@ gulp.task('sass', function () {
 
 ## Source Maps
 
-`gulp-sass` can be used in tandem with [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps) to generate source maps for the Sass to CSS compilation. You will need to initialize [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps) prior to running `gulp-sass` and write the source maps after.
+`gulp-sass-changba` can be used in tandem with [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps) to generate source maps for the Sass to CSS compilation. You will need to initialize [gulp-sourcemaps](https://github.com/floridoo/gulp-sourcemaps) prior to running `gulp-sass-changba` and write the source maps after.
 
 ```javascript
 var sourcemaps = require('gulp-sourcemaps');
@@ -142,7 +142,7 @@ gulp.task('sass', function () {
 
 # Issues
 
-`gulp-sass` is a very light-weight wrapper around either [Dart Sass][] or [Node Sass][] (which in turn is a Node binding for [LibSass][]). Because of this, the issue you're having likely isn't a `gulp-sass` issue, but an issue with one those projects or with [Sass][] as a whole.
+`gulp-sass-changba` is a very light-weight wrapper around either [Dart Sass][] or [Node Sass][] (which in turn is a Node binding for [LibSass][]). Because of this, the issue you're having likely isn't a `gulp-sass-changba` issue, but an issue with one those projects or with [Sass][] as a whole.
 
 [LibSass]: https://sass-lang.com/libsass
 [Sass]: https://sass-lang.com
